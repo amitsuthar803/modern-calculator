@@ -83,6 +83,19 @@ header h2 {
   background-color: #c8a900 !important;
 }
 
+.operator:hover,
+.equal-btn:hover {
+  background-color: #3c3c3c; /* Slightly lighter background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.operator:active,
+.equal-btn:active {
+  background-color: #4c4c4c; /* Even lighter background for active state */
+  transform: scale(0.95); /* Slightly smaller to indicate pressing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
 .sidebar {
   position: absolute;
   right: 0;
