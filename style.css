@@ -170,8 +170,8 @@ header {
   font-size: 15px;
 }
 
-.history-container p {
-  color: white;
+.operatorr {
+  color: blue; /* Change color as desired */
 }
 
 /*------------------------------------------
