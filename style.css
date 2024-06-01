@@ -86,12 +86,15 @@ header h2 {
   padding: 10px;
   font-size: 2em;
   color: #333;
+  overflow: hidden; /* Prevent overflow */
 }
 
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: space-between; /* Ensure the display and button container are spaced correctly */
   width: 75%;
+  justify-content: start;
   height: calc(
     100vh - 60px
   ); /* Ensure the main container takes up 100% height minus the header */
@@ -180,10 +183,6 @@ header h2 {
 
   .main {
     width: 100%;
-  }
-
-  .display {
-    flex-shrink: 1;
   }
 
   .btn-container button:not(.equal-btn) {
