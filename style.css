@@ -15,7 +15,6 @@ header {
   justify-content: start;
   align-items: center;
   height: 60px;
-  border: 1px solid yellow;
 }
 
 header h2 {
@@ -29,7 +28,7 @@ header h2 {
 }
 
 .calculator-box {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 110px);
   display: flex;
   flex-direction: column;
   width: 75%;
@@ -102,7 +101,6 @@ header h2 {
   top: 0;
   width: 25%;
   background-color: #000;
-  border: 1px solid yellow;
   height: 100%;
   transform: translateX(320px);
   transition: all 0.5s;
@@ -144,17 +142,6 @@ header {
   padding: 5px 10px;
   align-items: center;
   gap: 10px;
-}
-
-footer {
-  background-color: #000;
-  height: 40px;
-  color: #f4f4f4;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 15px;
-  justify-content: center;
 }
 
 /*------------------------------------------
