@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  border: 1px solid yellow;
+  border: 1px solid #c2a300;
   height: 60px;
   display: flex;
   justify-content: start;
@@ -33,7 +33,7 @@ header h2 {
 
 .sidebar {
   width: 25%;
-  border: 1px solid yellow;
+  border: 1px solid #c2a300;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -59,7 +59,7 @@ header h2 {
 }
 
 .sidebar .clear {
-  background-color: yellow;
+  background-color: #c2a300;
   border: 20px;
   border-radius: 20px;
   padding: 5px 10px;
@@ -110,7 +110,6 @@ header h2 {
   font-size: 15px;
   cursor: pointer;
   color: #feffe4;
-  background: #222222;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
@@ -119,7 +118,7 @@ header h2 {
   font-weight: 800;
   font-size: 12px;
   cursor: pointer;
-  background-color: yellow;
+  background-color: #c2a300;
   color: black;
   grid-row: 4 / 6;
   grid-column: 4 / 5;
@@ -136,6 +135,10 @@ header h2 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.digit {
+  background-color: #2e2e2e;
+}
+
 .equal-btn:hover {
   background-color: #ffeb3b;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -147,7 +150,16 @@ header h2 {
 }
 
 .operator {
-  color: yellow !important;
+  color: #c2a300 !important;
+  background-color: #202024;
+}
+
+.curr-data {
+  color: #f7f7f7;
+}
+
+.history-data {
+  color: #f7f7f7;
 }
 
 @media screen and (max-width: 640px) {
