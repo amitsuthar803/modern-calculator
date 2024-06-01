@@ -170,6 +170,10 @@ header {
   font-size: 15px;
 }
 
+.history-container p {
+  color: white;
+}
+
 /*------------------------------------------
   Responsive Grid Media Queries - 1280, 1024, 768, 480
    1280-1024   - desktop (default grid)

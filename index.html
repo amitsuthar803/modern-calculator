@@ -2,11 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=
-      , initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -25,43 +21,56 @@
       </header>
       <div class="sidebar show">
         <div class="action-box">
-          <i class="fa-solid fa-xmark fa-xl close" style="color: #ffd43b"></i>
+          <i class="fa-solid fa-times fa-xl close" style="color: #ffd43b"></i>
           <h2>History</h2>
           <span class="clear-btn">
-            <i class="fa-solid fa-xmark" style="color: #000"></i>
+            <i class="fa-solid fa-times" style="color: #000"></i>
             <h5>Clear</h5>
           </span>
         </div>
-        <div></div>
+        <!-- History Container -->
+        <div class="history-container">
+          
+        </div>
       </div>
 
       <div class="calculator-box">
         <div class="display">
-          <input type="text" />
-          <h3>251.2</h3>
+          <input type="text" id="inputField" disabled />
+          <h3 id="resultDisplay">0</h3>
         </div>
         <div class="button-box">
-          <button class="operator">AC</button>
-          <button class="operator"><i class="fa-solid fa-divide"></i></button>
-          <button class="operator"><i class="fa-solid fa-xmark"></i></button>
-          <button class="operator">
+          <button class="operator" onclick="clearAll()">AC</button>
+          <button class="operator" onclick="appendOperator('/')">
+            <i class="fa-solid fa-divide"></i>
+          </button>
+          <button class="operator" onclick="appendOperator('*')">
+            <i class="fa-solid fa-times"></i>
+          </button>
+          <button class="operator" onclick="deleteLast()">
             <i class="fa-solid fa-delete-left"></i>
           </button>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button class="operator"><i class="fa-solid fa-minus"></i></button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button class="operator"><i class="fa-solid fa-plus"></i></button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button class="equal-btn"><i class="fa-solid fa-equals"></i></button>
-          <button>00</button>
-          <button>0</button>
-          <button>.</button>
+          <button onclick="appendNumber('7')">7</button>
+          <button onclick="appendNumber('8')">8</button>
+          <button onclick="appendNumber('9')">9</button>
+          <button class="operator" onclick="appendOperator('-')">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <button onclick="appendNumber('4')">4</button>
+          <button onclick="appendNumber('5')">5</button>
+          <button onclick="appendNumber('6')">6</button>
+          <button class="operator" onclick="appendOperator('+')">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <button onclick="appendNumber('1')">1</button>
+          <button onclick="appendNumber('2')">2</button>
+          <button onclick="appendNumber('3')">3</button>
+          <button class="equal-btn" onclick="calculateResult()">
+            <i class="fa-solid fa-equals"></i>
+          </button>
+          <button onclick="appendNumber('00')">00</button>
+          <button onclick="appendNumber('0')">0</button>
+          <button onclick="appendNumber('.')">.</button>
         </div>
       </div>
     </div>
