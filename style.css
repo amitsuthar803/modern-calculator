@@ -194,4 +194,14 @@ header h2 {
     grid-row: 4 / 6;
     grid-column: 4 /5;
   }
+
+  .curr-data {
+    color: #f7f7f7;
+    font-size: 40px;
+  }
+
+  .history-data {
+    color: #f7f7f7;
+    font-size: 15px;
+  }
 }
