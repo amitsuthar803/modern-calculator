@@ -9,7 +9,6 @@ body {
   position: relative;
   background-color: #000;
   overflow: hidden;
-  height: 100vh;
 }
 
 header {
@@ -181,6 +180,7 @@ header h2 {
 
   .main {
     width: 100%;
+    height: calc(100vh - 60px); /* Adjust height for mobile view */
   }
 
   .btn-container button:not(.equal-btn) {
