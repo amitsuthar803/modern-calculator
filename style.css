@@ -190,5 +190,7 @@ header h2 {
 
   .equal-btn {
     font-size: 10px;
+    grid-row: 4 / 6;
+    grid-column: 4 /5;
   }
 }
