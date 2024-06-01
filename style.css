@@ -153,6 +153,11 @@ header {
   .close {
     display: block;
   }
+
+  .display {
+    height: 50%;
+    background-color: blue;
+  }
 }
 
 /* Small screens - MOBILE */
