@@ -55,6 +55,7 @@ header h2 {
   background-color: #2e2e2e;
   color: white;
   border: 1px solid #111;
+  cursor: pointer;
 }
 
 .operator {
@@ -92,10 +93,12 @@ header h2 {
 
 .hamburger {
   display: none;
+  cursor: pointer;
 }
 
 .close {
   display: none;
+  cursor: pointer;
 }
 
 .action-box {
