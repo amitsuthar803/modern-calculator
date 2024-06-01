@@ -39,22 +39,35 @@ document.addEventListener("DOMContentLoaded", () => {
     historyContainer.innerHTML = reversedHistory
       .map(
         (item) => `
-    <p>
-      <strong>Time:</strong> ${item.timestamp} <br>
-      <strong>Calculation:</strong> ${item.expression} <br>
-      <strong>Total:</strong> ${item.result}
-    </p>
+        <div class="history-box">
+        <div class='time-box'>
+      ${item.timestamp} <br>
+        </div>
+      <div class="calc-box">
+      <span class="expression">
+     ${item.expression} <br>
+      </span>
+      <span class="total">
+    ${item.result}
+      </span>
+      
+      </div>
+  
+    </div>
   `
       )
       .join("");
   }
 
-  // Function to get the current time in a readable format
+  // Function to get the current time in a readable format with AM/PM
   function getCurrentTime() {
     const now = new Date();
-    return now.toLocaleString(); // Format the date and time
+    return now.toLocaleTimeString("en-US", {
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true,
+    });
   }
-
   // Function to add a number to the current input
   window.appendNumber = (number) => {
     currentInput += number; // Add the number to the current input

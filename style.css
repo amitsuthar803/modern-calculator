@@ -168,10 +168,45 @@ header {
   align-items: center;
   gap: 10px;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .history-container {
   color: white !important;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.history-box {
+  background: #1a1a1b;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.calc-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.time-box {
+  color: #c8a900;
+}
+
+.expression {
+  color: wheat;
+}
+
+.total {
+  color: white;
+  font-weight: bolder;
+  margin-top: 5px;
 }
 
 /*------------------------------------------
@@ -231,6 +266,11 @@ header {
 
   .display h3 {
     font-size: 2rem;
+  }
+
+  .sidebar {
+ 
+    padding: 15px 20px;
   }
 }
 
