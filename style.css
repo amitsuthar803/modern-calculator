@@ -32,7 +32,6 @@ header h2 {
   height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   width: 75%;
 }
 
@@ -169,7 +168,6 @@ header {
   }
 
   .display {
-    height: 50%;
     background-color: blue;
   }
 }
