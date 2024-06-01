@@ -91,10 +91,9 @@ header h2 {
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   width: 75%;
-  justify-content: start;
   height: calc(100vh - 60px);
+  background-color: red;
 }
 
 .btn-container {
@@ -183,7 +182,6 @@ header h2 {
 
   .main {
     width: 100%;
-    height: calc(100vh - 60px);
   }
 
   .btn-container button:not(.equal-btn) {
