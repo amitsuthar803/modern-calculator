@@ -76,7 +76,7 @@ header h2 {
 
 .display {
   flex: 1; /* Take up remaining space in the main container */
-  background: rgb(0, 0, 0);
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -94,7 +94,7 @@ header h2 {
   justify-content: flex-start;
   width: 75%;
   justify-content: start;
-  height: calc(100vh - 60px);
+  height: calc(100dvh - 60px);
 }
 
 .btn-container {
