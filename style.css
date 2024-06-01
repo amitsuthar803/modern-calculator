@@ -16,16 +16,22 @@ header {
 .calculator-box {
   background: red;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .display {
+  height: 100%;
   background-color: black;
-  height: 30%;
 }
 
 .button-box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 70%;
+  grid-template-rows: repeat(5, 50px);
   background-color: #222;
+}
+
+.button-box button {
 }
