@@ -24,12 +24,13 @@ header {
 .display {
   height: 100%;
   background-color: black;
+  flex-shrink: 1;
 }
 
 .button-box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 50px);
+  grid-template-rows: repeat(5, 70px);
   background-color: #222;
 }
 
