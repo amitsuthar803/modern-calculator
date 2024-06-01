@@ -187,7 +187,7 @@ header h2 {
 
   .btn-container button:not(.equal-btn) {
     padding: 4px 0px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .equal-btn {
@@ -208,5 +208,13 @@ header h2 {
 
   .display {
     height: 40%;
+  }
+
+  .btn-container {
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: repeat(5, 1fr);
+    gap: 2px;
   }
 }
