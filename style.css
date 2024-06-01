@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Lato, sans-serif;
 }
 
 body {
@@ -10,8 +11,16 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
   height: 60px;
   border: 1px solid yellow;
+}
+
+header h2 {
+  color: white;
+  margin-left: 10px;
 }
 
 .applayout {
@@ -54,6 +63,7 @@ header {
   height: 100%;
   transform: translateX(320px);
   transition: all 0.5s;
+  padding: 15px 10px;
 }
 
 .sidebar.show {
@@ -62,6 +72,33 @@ header {
 
 .sidebar h2 {
   color: white;
+}
+
+.hamburger {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+.action-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  padding: 0px 10px;
+}
+
+.clear-btn {
+  background-color: yellow;
+  display: flex;
+  border-radius: 15px;
+  padding: 5px 10px;
+  align-items: center;
+  gap: 10px;
 }
 
 /*------------------------------------------
@@ -88,6 +125,14 @@ header {
 
   .calculator-box {
     width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .close {
+    display: block;
   }
 }
 
