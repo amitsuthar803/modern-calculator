@@ -61,14 +61,14 @@ header h2 {
 /* Hover effect */
 .button-box button:hover {
   background-color: #3c3c3c; /* Slightly lighter background */
-  transform: scale(1.05); /* Slightly larger */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 /* Active (touch) effect */
 .button-box button:active {
   background-color: #4c4c4c; /* Even lighter background for active state */
   transform: scale(0.95); /* Slightly smaller to indicate pressing */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
 }
 
 .operator {
@@ -168,6 +168,7 @@ header {
   }
 
   .display {
+    height: 80%;
     background-color: blue;
   }
 }
