@@ -79,8 +79,10 @@ header h2 {
   flex: 1; /* Take up remaining space in the main container */
   background: rgb(0, 0, 0);
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+  justify-content: center;
   padding: 10px;
   font-size: 2em;
   color: #333;
@@ -109,20 +111,43 @@ header h2 {
   cursor: pointer;
   color: #feffe4;
   background: #222222;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .equal-btn {
   border: none;
   font-weight: 800;
-  font-size: 15px;
+  font-size: 12px;
   cursor: pointer;
-  background-color: #f0ff5f;
+  background-color: yellow;
   color: black;
+  grid-row: 4 / 6;
+  grid-column: 4 / 5;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.equal-btn {
-  grid-row: 4 / 6;
-  grid-column: 4/5;
+.btn-container button:not(.equal-btn):hover {
+  background-color: #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-container button:not(.equal-btn):active {
+  background-color: #666;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.equal-btn:hover {
+  background-color: #ffeb3b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.equal-btn:active {
+  background-color: #fdd835;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.operator {
+  color: yellow !important;
 }
 
 @media screen and (max-width: 640px) {
