@@ -169,4 +169,17 @@ header h2 {
   .main {
     width: 100%;
   }
+
+  .display {
+    flex-shrink: 1;
+  }
+
+  .btn-container button:not(.equal-btn) {
+    padding: 8px 0px;
+    font-size: 12px;
+  }
+
+  .equal-btn {
+    font-size: 10px;
+  }
 }
