@@ -180,7 +180,7 @@ header h2 {
 
   .main {
     width: 100%;
-    height: calc(100vh - 60px); /* Adjust height for mobile view */
+    height: calc(100vh - 60px);
   }
 
   .btn-container button:not(.equal-btn) {
