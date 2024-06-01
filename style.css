@@ -85,7 +85,7 @@ header h2 {
   font-size: 2em;
   color: #333;
   overflow: hidden;
-  background-color: teal;
+  /* background-color: teal; */
 }
 
 .main {
