@@ -98,6 +98,7 @@ header h2 {
 }
 
 .btn-container {
+  justify-content: start;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2px;
