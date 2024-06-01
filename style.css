@@ -162,7 +162,7 @@ header h2 {
   color: #f7f7f7;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 728px) {
   .hamburger {
     display: block;
   }
