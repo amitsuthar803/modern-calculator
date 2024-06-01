@@ -51,6 +51,22 @@ header h2 {
 }
 
 .button-box button {
+  border: none;
+  background-color: #2e2e2e;
+  color: white;
+  border: 1px solid #111;
+}
+
+.operator {
+  background-color: #202024 !important;
+  color: #c8a900 !important;
+}
+
+.equal-btn {
+  grid-column: 4/5;
+  grid-row: 4/6;
+  color: #222 !important;
+  background-color: #c8a900 !important;
 }
 
 .sidebar {
