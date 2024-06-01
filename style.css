@@ -79,7 +79,7 @@ header h2 {
   flex-direction: column;
   width: 75%;
   height: calc(100vh - 60px);
-  justify-content: flex-end;
+  /* justify-content: flex-start; */
 }
 
 .display {
@@ -180,6 +180,8 @@ header h2 {
 
   .main {
     width: 100%;
+    height: calc(100vh - 60px);
+    background: red;
   }
 
   .btn-container button:not(.equal-btn) {
