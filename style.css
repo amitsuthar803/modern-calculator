@@ -205,4 +205,8 @@ header h2 {
     color: #f7f7f7;
     font-size: 15px;
   }
+
+  .display {
+    height: 40%;
+  }
 }
