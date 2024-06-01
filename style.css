@@ -76,7 +76,6 @@ header h2 {
 
 .main {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   width: 75%;
   height: calc(100vh - 60px);
@@ -95,10 +94,11 @@ header h2 {
 }
 
 .btn-container {
-  justify-content: start;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: repeat(5, 1fr);
   gap: 2px;
+  margin-top: auto;
 }
 
 .btn-container button:not(.equal-btn) {
@@ -183,7 +183,7 @@ header h2 {
   }
 
   .btn-container button:not(.equal-btn) {
-    padding: 8px 0px;
+    padding: 4px 0px;
     font-size: 12px;
   }
 
