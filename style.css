@@ -55,6 +55,21 @@ header h2 {
   color: white;
   border: 1px solid #111;
   cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.1s ease,
+    box-shadow 0.1s ease;
+}
+
+/* Hover effect */
+.button-box button:hover {
+  background-color: #3c3c3c; /* Slightly lighter background */
+  transform: scale(1.05); /* Slightly larger */
+}
+
+/* Active (touch) effect */
+.button-box button:active {
+  background-color: #4c4c4c; /* Even lighter background for active state */
+  transform: scale(0.95); /* Slightly smaller to indicate pressing */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 
 .operator {
