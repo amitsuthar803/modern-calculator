@@ -9,6 +9,7 @@ body {
   position: relative;
   background-color: #000;
   overflow: hidden;
+  height: 100vh; /* Ensure the body takes up the full viewport height */
 }
 
 header {
@@ -75,16 +76,23 @@ header h2 {
 }
 
 .display {
-  height: 30%;
+  flex: 1; /* Take up remaining space in the main container */
+  background: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  font-size: 2em;
+  color: #333;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  border: 1px solid greenyellow;
   width: 75%;
-  height: 70%;
+  height: calc(
+    100vh - 60px
+  ); /* Ensure the main container takes up 100% height minus the header */
 }
 
 .btn-container {
