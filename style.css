@@ -74,6 +74,14 @@ header h2 {
   display: none;
 }
 
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 75%;
+  height: calc(100vh - 60px);
+}
+
 .display {
   display: flex;
   flex-direction: column;
@@ -84,15 +92,6 @@ header h2 {
   font-size: 2em;
   color: #333;
   overflow: hidden;
-  /* background-color: teal; */
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  height: calc(100vh - 60px);
-  background-color: red;
 }
 
 .btn-container {
