@@ -16,6 +16,7 @@ header {
 
 .applayout {
   position: relative;
+  overflow: hidden;
 }
 
 .calculator-box {
