@@ -29,7 +29,7 @@ header h2 {
 }
 
 .calculator-box {
-  height: calc(100vh - 60px);
+  height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
   width: 75%;
@@ -144,6 +144,17 @@ header {
   padding: 5px 10px;
   align-items: center;
   gap: 10px;
+}
+
+footer {
+  background-color: #000;
+  height: 40px;
+  color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  justify-content: center;
 }
 
 /*------------------------------------------
