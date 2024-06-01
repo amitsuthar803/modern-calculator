@@ -93,7 +93,7 @@ header h2 {
   justify-content: flex-start;
   width: 75%;
   justify-content: start;
-  height: calc(100dvh - 60px);
+  height: calc(100vh - 60px);
 }
 
 .btn-container {
