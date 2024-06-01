@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       updateHistory(); // Update the history display
       currentInput = ""; // Clear the current input
+      inputField.value = ""; // Clear the input field display after displaying the result
       console.log(history);
     } catch (error) {
       resultDisplay.textContent = "Error"; // Display an error message if the calculation fails
@@ -103,4 +104,29 @@ document.addEventListener("DOMContentLoaded", () => {
     currentInput = currentInput.slice(0, -1); // Remove the last character from the current input
     inputField.value = currentInput; // Update the input field display
   };
+
+  // Event listener for keypress events
+  document.addEventListener("keypress", (event) => {
+    const key = event.key;
+    // Check if the key pressed is a number (0-9)
+    if (/\d/.test(key)) {
+      window.appendNumber(key);
+    } else {
+      // Check for operator keys
+      switch (key) {
+        case "+":
+        case "-":
+        case "*":
+        case "/":
+          window.appendOperator(key);
+          break;
+        case "Enter":
+          event.preventDefault(); // Prevent default behavior of the "Enter" key
+          window.calculateResult(); // Calculate the result
+          break;
+        default:
+          break;
+      }
+    }
+  });
 });
