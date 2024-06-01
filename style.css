@@ -18,8 +18,10 @@ header {
 }
 
 header h2 {
-  color: white;
+  color: #c8a900;
   margin-left: 10px;
+  text-decoration: underline;
+  font-size: 20px;
 }
 
 .applayout {
@@ -28,7 +30,7 @@ header h2 {
 }
 
 .calculator-box {
-  height: calc(100vh - 110px);
+  height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   width: 75%;
@@ -38,6 +40,27 @@ header h2 {
   height: 100%;
   background-color: black;
   flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  color: white;
+  padding: 0px 30px;
+  gap: 10px;
+}
+
+.display input {
+  background-color: #000;
+  width: 100%;
+  height: 10%;
+  color: white;
+  text-align: end;
+  border: none;
+}
+
+.display h3 {
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 .button-box {
@@ -96,6 +119,7 @@ header h2 {
 }
 
 .sidebar {
+  border-left: 2px solid #222;
   position: absolute;
   right: 0;
   top: 0;
@@ -104,7 +128,7 @@ header h2 {
   height: 100%;
   transform: translateX(320px);
   transition: all 0.5s;
-  padding: 15px 10px;
+  padding: 15px 20px;
 }
 
 .sidebar.show {
@@ -113,6 +137,7 @@ header h2 {
 
 .sidebar h2 {
   color: white;
+  font-size: 20px;
 }
 
 .hamburger {
@@ -142,6 +167,7 @@ header {
   padding: 5px 10px;
   align-items: center;
   gap: 10px;
+  font-size: 15px;
 }
 
 /*------------------------------------------
@@ -162,8 +188,13 @@ header {
 
 @media all and (max-width: 480px) {
   .sidebar.show {
+    border: none;
     width: 100%;
     transform: translateX(0);
+  }
+
+  .sidebar {
+    padding: 15px 10px;
   }
 
   .calculator-box {
@@ -181,6 +212,21 @@ header {
   .display {
     height: 80%;
     background-color: #000;
+    justify-content: end;
+    align-items: end;
+    padding: 100px 20px;
+  }
+
+  .calculator-box {
+    height: calc(100vh - 110px);
+  }
+
+  .display input {
+    padding: 10px 20px;
+  }
+
+  .display h3 {
+    font-size: 2rem;
   }
 }
 
